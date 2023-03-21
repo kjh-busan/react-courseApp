@@ -26,8 +26,10 @@ const CourseInput = props => {
       <div className="form-control">
         <label style={{ color: !isValid ? "red" : "black" }}>Course Goal</label>
         <input
+          style={{ borderColor: !isValid ? "red" : "black" }}
           type="text"
           value={enteredValue}
+          placeholder={!isValid && "Plz Input"}
           onChange={goalInputChangeHandler}
         />
       </div>
